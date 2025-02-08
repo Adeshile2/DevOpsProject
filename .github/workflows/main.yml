@@ -36,6 +36,7 @@ jobs:
       
       - name: Deploy to ECS
         run: |
-          aws ecs update-service --cluster DevCluster --service ml-api-task --force-new-deployment
+          aws ecs update-service --cluster DevCluster --service ml-api-service --force-new-deployment --region eu-west-1
+
 
 
