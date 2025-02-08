@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the model, encoder, and app files
 COPY ml_model.pkl .
 COPY encoder.pkl .
-COPY app.py .
+COPY train.py .
 
 # Expose API port
 EXPOSE 3000
